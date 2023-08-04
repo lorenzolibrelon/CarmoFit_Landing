@@ -65,3 +65,16 @@ document.querySelector('form').addEventListener('submit', function (event) {
   const dataConsultaInput = document.getElementById('data_consulta');
   dataConsultaInput.value = dataSelecionada;
 });
+
+
+// ------------------------------
+//       BOTAO DE ROLAGEM
+// ------------------------------
+
+
+//Planos Button
+const btnplanos = document.querySelector('nav-planos');
+
+btnplanos.addEventListener('click', () => {
+  window.scroll({top: window.innerHeight, behavior: "smooth"})
+});
