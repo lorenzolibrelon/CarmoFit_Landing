@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Roboto:ital,wght@0,400;0,900;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
 
 /*--------------------------------------------------------------
                         CSS Variables
@@ -73,8 +74,6 @@ nav{
   align-items: center;
   padding: 1.5rem 1.5rem;
   position: sticky;
-  top: 0;
-  left: 0;
   z-index: 1;
   box-shadow: 0 5px 26px 0 rgba(68, 88, 144, 0.14);
 }
@@ -284,6 +283,28 @@ ul{
   color: #cdc43f;
 }
 
+.btn-aval-cyan{
+  position: relative;
+  border: 2px solid #cdc43f;
+  font-size: 15px;
+  height: 60px;
+  width: 160px;
+  border-radius: 15px;
+  text-decoration: none;
+  background-color: white;
+  color: #cdc43f;
+  padding: 5px;
+}
+
+.btn-aval-cyan:hover{
+  border-style: hidden;
+  cursor: pointer;
+  color: #fbfde6;
+  background: #cdc43f;
+  transition: var(--transition);
+  border: 2px solid #fbfde6;
+}
+
 /* ===== Icone 2 ===== */
 .planos .icon-box-green .icon{
   background: #eafde7;
@@ -299,6 +320,28 @@ ul{
 
 .price-plan-2{
   color: #38b627;
+}
+
+.btn-aval-green{
+  position: relative;
+  border: 2px solid #38b627;
+  font-size: 15px;
+  height: 60px;
+  width: 160px;
+  border-radius: 15px;
+  text-decoration: none;
+  background-color: white;
+  color: #38b627;
+  padding: 5px;
+}
+
+.btn-aval-green:hover{
+  border-style: hidden;
+  cursor: pointer;
+  color: #eafde7;
+  background: #38b627;
+  transition: var(--transition);
+  border: 2px solid #eafde7;
 }
 
 /* ===== Icone 3 ===== */
@@ -324,6 +367,28 @@ ul{
   padding: 10px;
   width: 500px;
   max-height: 500px;
+}
+
+.btn-aval-blue{
+  position: relative;
+  border: 2px solid #2282ff;
+  font-size: 15px;
+  height: 60px;
+  width: 160px;
+  border-radius: 15px;
+  text-decoration: none;
+  background-color: white;
+  color: #2282ff;
+  padding: 5px;
+}
+
+.btn-aval-blue:hover{
+  border-style: hidden;
+  cursor: pointer;
+  color: #e1eeff;
+  background: #2282ff;
+  transition: var(--transition);
+  border: 2px solid #e1eeff;
 }
 
 /*--------------------------------------------------------------
@@ -366,16 +431,14 @@ ul{
 
 .btn-aval{
   position: relative;
-  border-style: solid;
-  border-width: 2px;
-  border-color: white;
+  border: 2px solid var(--primary-color);
   font-size: 15px;
   height: 60px;
   width: 160px;
   border-radius: 15px;
   text-decoration: none;
-  background-color: var(--primary-color);
-  color: white;
+  background-color: white;
+  color: var(--primary-color);
   padding: 5px;
 }
 
@@ -390,6 +453,57 @@ ul{
   padding: 5px;
 }
 
+/*--------------------------------------------------------------
+                          Payment Content
+--------------------------------------------------------------*/
+
+.date-content{
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+.calendar form label{
+  font-size: 120%;
+}
+
+.calendar form input{
+  margin-top: 1em;
+  display: block;
+}
+
+/*--------------------------------------------------------------
+                          Calendar
+--------------------------------------------------------------*/
+
+#calendario {
+  font-family: Arial, sans-serif;
+}
+
+.calendario-semana {
+  display: flex;
+}
+
+.calendario-dia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.calendario-dia:hover {
+  background-color: #f2f2f2;
+}
+
+/* Estilo para as datas selecionadas */
+.calendario-dia.selecionado {
+  background-color: #007bff;
+  color: #fff;
+}
 
 /*--------------------------------------------------------------
                           Division
@@ -415,11 +529,13 @@ ul{
 .about{
   background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
   padding: 1px;
+  display: flex;
 }
 
 
 .about-content{
   display: flex;
+  position: sticky;
   margin-top: 5vh;
   margin-left: 50vh;
   margin-bottom: 5vh;
@@ -442,6 +558,11 @@ ul{
   color: var(--primary-color);
   font-size: 30px;
   margin-bottom: 30px;
+}
+
+.about-left h4{
+  font-size: 20px;
+  margin-bottom: 0.5cm;
 }
 
 .mdl{
@@ -684,6 +805,9 @@ ul{
 --------------------------------------------------------------*/
 #footer {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
   background: var(--primary-color);
   padding: 0 0 30px 0;
   color: #fff;
