@@ -2,16 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Roboto:ital,wght@0,400;0,900;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
 
-
-/*
-Resoluções:
-https://www.freecodecamp.org/portuguese/news/tutorial-de-media-queries-do-css-resolucoes-padrao-breakpoints-do-css-e-tamanhos-de-telefone/
-*/
-
 /*--------------------------------------------------------------
                         CSS Variables
 --------------------------------------------------------------*/
-:root{
+:root {
   --normal-font: 400;
   --bold-font: 600;
   --bolder-font: 900;
@@ -42,7 +36,7 @@ body{
 }
 
 ul{
-  padding-right: 5vh;
+  padding-right: 5%;
 }
 
 ul li{
@@ -59,8 +53,12 @@ a:hover{
   color: rgba(255, 255, 255, 0.4);
 }
 
-/* ===== MEDIA QUERIES =====*/
 
+#header{
+
+}
+
+/* ===== Notebook Query =====*/
 @media (min-width: 1024px){
   a{
     font-size: 3vh;
@@ -100,6 +98,8 @@ ul{
   font-weight: var(--bold-font);
 }
 
+
+
 .cf-title h1{
   position: relative;
   font-size: 30px;
@@ -107,18 +107,31 @@ ul{
   font-family: Electrolize, sans-serif;
 }
 
-/* ------- MEDIA NTOEBOOK -------- */
+
+/* ------- Large Query -------- */
+@media (min-width: 1900px){
+  .cf-title h1{
+    font-size: 30px;
+  }
+}
+
+/* ------- Notebook Query -------- */
 @media (min-width: 1024px){
   .cf-title h1{
     font-size: 5vh;
   }
 }
 
-/* ------- MEDIA MOBILE -------- */
+/* ------- Mobile Query -------- */
 
 /*--------------------------------------------------------------
                               Main
 --------------------------------------------------------------*/
+
+
+#main{
+
+}
 
 /*Banner*/
 
@@ -231,6 +244,8 @@ ul{
   transition: all 0.3s ease-in-out;
   text-align: center;
   border: 1px solid #fff;
+  min-height: 490px;
+  max-height: 500px;
 }
 
 .planos .icon{
@@ -573,13 +588,12 @@ ul{
 
 
 .about-content{
-  background: red;
   display: flex;
   position: static;
-  margin-top: 3%;
-  margin-left: 25%;
-  margin-bottom: 3%;
-  margin-right: 25%;
+  margin-top: 5vh;
+  margin-left: 50vh;
+  margin-bottom: 5vh;
+  margin-right: 50vh;
   padding-top: 10vh;
   padding-left: 10vh;
   padding-right: 10vh;
@@ -724,7 +738,6 @@ ul{
 }
 
 .about-right img{
-  object-fit: cover;
   margin: 0 auto;
   display: flex;
   position: relative;
@@ -734,11 +747,11 @@ ul{
 }
 
 /* --- MEDIA Notebook About ---*/
-@media (min-width: 1024px){
+@media (min-width: 1024px) and (max-width: 1800px){
 
   .about-content{
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 50vh;
+    margin-right: 50vh;
   }
 
   .about-left{
@@ -812,7 +825,6 @@ ul{
 
 .ad-infos-content{
   display: flex;
-  padding-bottom: 5vh;
 }
 
 /*Horarios*/
@@ -912,8 +924,8 @@ ul{
   margin-top: 3vh;
 }
 
-/* --- MEDIA Notebook About ---*/
-@media (min-width: 1024px){
+/* ===== Notebook Query ===== */
+@media (min-width: 1024px) and (max-width: 1800px){
   .card-horarios{
     padding-left: 10vh;
   }
@@ -1056,8 +1068,8 @@ ul{
   font-size: 15px;
 }
 
-/* --- MEDIA Notebook Footer ---*/
-@media (min-width: 1024px){
+/* ===== Notebook Query ===== */
+@media (min-width: 1024px) and (max-width: 1800pxn){
   #footer{
     padding: 0 0 10px 0;
     font-size: 13px;
@@ -1133,7 +1145,6 @@ ul{
     font-size: 14px;
   }
   
-  /*Copyright*/
   .copyright{
     color: var(--primary-color);
     font-size: 15px;
