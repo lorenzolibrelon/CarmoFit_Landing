@@ -74,7 +74,7 @@ a:hover{
 */
 
 nav{
-  background: linear-gradient(to right, var(--primary-color), #ffb950);
+  background: rgb(34, 34, 34);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -89,6 +89,7 @@ ul{
   justify-content: space-between;
   align-items: center;
 }
+
   
 .nav-item{
   margin-left: 2rem;
@@ -96,15 +97,28 @@ ul{
   
 .nav-link{
   font-weight: var(--bold-font);
+  color: var(--primary-color);
 }
 
-
+.nav-link:hover{
+  color: var(--primary-color);
+  text-shadow:
+  0 0 7px #b88519,
+  0 0 10px #b88519,
+  0 0 21px #b88519;
+}
 
 .cf-title h1{
   position: relative;
   font-size: 30px;
-  color: white;
+  color: var(--primary-color);
   font-family: Electrolize, sans-serif;
+  text-shadow:
+    0 0 7px #b88519,
+    0 0 10px #b88519,
+    0 0 21px #b88519,
+    0 0 42px var(--primary-color),
+    0 0 82px #b88519;
 }
 
 
@@ -136,7 +150,7 @@ ul{
 /*Banner*/
 
 .banner{
-  height: 800px;
+  height: 1500px;
   width: 100%;
   position: relative;
   background: url(img/Fundo.jpg) no-repeat;
@@ -149,32 +163,38 @@ ul{
 
 .banner-in{
   border: 5px solid rgba(0,0,0, 0.14);
-  background: rgba(0,0,0, 0.4);
+  background: white;
   margin-left: 20%;
-  margin-top: 300px;
+  margin-top: 50vh;
   padding: 25px;
   border-radius: 20px;
 }
 
-.banner-in-text{
+.banner-in-text{ 
   padding: 2px;
+}
+
+.f-pos{
+  display: inline-block;
 }
 
 .f1{
   font-size: 40px;
   padding: 5px;
-  color: rgb(255, 255, 255);
+  color: black;
+  display: inline-block;
 }
 
 .f2{
-  font-size: 43px;
+  font-size: 73px;
   color: var(--primary-color);
+  display: inline-block;
 }
 
 .banner-in h3{
   margin-left: 14px;
   padding: 6px;
-  color: rgba(255,255,255, 0.9)
+  color: black;
 }
 
 .banner-in .btn-wp{
@@ -580,7 +600,7 @@ ul{
 
 /* ----- Left ----- */
 .about{
-  background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+  background: #272626;
   padding: 1px;
   display: flex;
   position: relative;
@@ -599,7 +619,8 @@ ul{
   padding-right: 10vh;
   padding-bottom: 5vh;
   background: #ffffff;
-  box-shadow: 0 5px 26px 0 rgba(68, 88, 144, 0.14);
+  box-shadow: 0 5px 26px 0 rgba(68, 88, 144, 0.14),
+  0 5px 12px 0 rgba(68, 88, 144, 0.14);
   border: 2px solid white;
   border-radius: 40px;
 }
@@ -615,6 +636,7 @@ ul{
 }
 
 .about-left h4{
+  color: #ffbc58;
   font-size: 20px;
   margin-bottom: 0.5cm;
 }
@@ -637,11 +659,12 @@ ul{
   justify-content: center;
   display: flex;
   position: relative;
-  margin-top: 0.7cm;
+  margin-top: 0.7cm; 
   padding-top: 5vh;
   padding-bottom: 1vh;
   border-radius: 20px;
   border: 2px solid var(--md-color);
+  box-shadow: 0 6px 15px 0 rgba(68, 88, 144, 0.24);
 }
 
 /*card 1*/
@@ -650,7 +673,7 @@ ul{
   position: relative;
   overflow: hidden;
   margin: 0  0 40px 0;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; 
   text-align: center;
   font-size: 10px;
   align-items: center;
@@ -874,7 +897,8 @@ ul{
   margin-left: 7px;
   margin-right: 7px;
   border-radius: 15px;
-  box-shadow: 0 3px 20px 0 rgba(68, 88, 144, 0.14);
+  box-shadow: 0 3px 20px 0 rgba(68, 88, 144, 0.14),
+  0 5px 10px 0 rgba(68, 88, 144, 0.09);
 }
 
 .review-box img{
@@ -889,7 +913,7 @@ ul{
   margin-top: 0.2cm;
 }
 
-.review-box p{
+.review-box p{ 
   margin-top: 5px;
 }
 
@@ -922,6 +946,9 @@ ul{
 .map-box iframe{
   border-radius: 20px;
   margin-top: 3vh;
+  box-shadow: 0 5px 26px 0 rgba(68, 88, 144, 0.14),
+  0 5px 12px 0 rgba(68, 88, 144, 0.14),
+  0 5px 5px 0 rgba(68, 88, 144, 0.14);
 }
 
 /* ===== Notebook Query ===== */
