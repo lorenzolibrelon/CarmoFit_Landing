@@ -163,7 +163,7 @@ ul{
 
 .banner-in{
   border: 5px solid rgba(0,0,0, 0.14);
-  background: white;
+  background: rgba(255, 255, 255, 0.90);
   margin-left: 20%;
   margin-top: 50vh;
   padding: 25px;
@@ -773,16 +773,20 @@ ul{
 @media (min-width: 1024px) and (max-width: 1800px){
 
   .about-content{
-    margin-left: 50vh;
-    margin-right: 50vh;
+    margin-left: 5vh;
+    margin-right: 5vh;
   }
 
   .about-left{
     max-width: 400px;
   }
 
+  .about-left h1{
+    font-size: 30px;
+  }
+
   .about-left h4{
-    font-size: 17px;
+    font-size: 23px;
   }
 
   .mdl-content{
@@ -963,8 +967,8 @@ ul{
   
   .review-box{
     padding-top: 1cm;
-    width: 200px;
-    height: 175px;
+    width: 210px;
+    height: 145px;
     padding: 15px;
     margin-left: 5px;
     margin-right: 5px;
@@ -985,6 +989,15 @@ ul{
 
   .map-card{
     margin-top: 5vh;
+    margin-left: 6vh;
+  }
+
+  .review-title h2{
+    font-size: 17px;
+  }
+
+  .review-box p{
+    font-size: 14px;
   }
 }
 
@@ -1096,7 +1109,7 @@ ul{
 }
 
 /* ===== Notebook Query ===== */
-@media (min-width: 1024px) and (max-width: 1800pxn){
+@media (min-width: 1024px) and (max-width: 1800px){
   #footer{
     padding: 0 0 10px 0;
     font-size: 13px;
@@ -1130,8 +1143,8 @@ ul{
   
   .contact-card{
     display: inline-block;
-    margin-top: 2vh;
-    margin-left: 2vh;
+    margin-top: 3vh;
+    margin-left: 3vh;
   }
   
   .contact-title{
@@ -1141,8 +1154,8 @@ ul{
   }
   
   .contact-info{
-    max-height: 20vh;
-    margin-left: 5px;
+    max-height: 21vh;
+    margin-left: 2.5vh;
     margin-bottom: 5px;
     padding-right: 10px;
   }
@@ -1169,11 +1182,11 @@ ul{
   }
   
   .contact-description p{
-    font-size: 14px;
+    font-size: 13px;
   }
   
   .copyright{
     color: var(--primary-color);
-    font-size: 15px;
+    font-size: 1px;
   }
 }
